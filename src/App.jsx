@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './layouts/Layout';
 import HomePage from './pages/HomePage';
 import MatchDetailsPage from './pages/MatchDetailsPage';
+import MatchesPage from './pages/MatchesPage';
 import PlayerProfilePage from './pages/PlayerProfilePage';
 import LoginPage from './pages/LoginPage';
 import LiveScoringPage from './pages/LiveScoringPage';
@@ -22,6 +23,7 @@ function App() {
                     {/* Public Portal Layout */}
                     <Route element={<Layout />}>
                         <Route path="/" element={<HomePage />} />
+                        <Route path="/matches" element={<MatchesPage />} />
                         <Route path="/match/:matchId" element={<MatchDetailsPage />} />
                         <Route path="/player/:playerId" element={<PlayerProfilePage />} />
                         <Route path="/players" element={<PlayersPage />} />
