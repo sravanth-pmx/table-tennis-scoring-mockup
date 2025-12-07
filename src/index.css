@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-slate-50 text-slate-800 antialiased font-sans;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-semibold tracking-tight text-slate-900;
+    }
+}
+
+@layer components {
+
+    /* The "Bento" Card */
+    .bento-card {
+        @apply bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden hover:shadow-md transition-shadow duration-200;
+    }
+
+    /* Corporate Button */
+    .btn-corporate {
+        @apply px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white font-medium rounded-lg text-sm transition-colors shadow-sm;
+    }
+
+    .btn-outline {
+        @apply px-4 py-2 border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium rounded-lg text-sm transition-colors;
+    }
+
+    /* Status Badges */
+    .badge-live {
+        @apply inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wider;
+    }
+
+    .badge-upcoming {
+        @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200 uppercase tracking-wider;
+    }
+
+    /* Tabular Numbers for Scores */
+    .font-mono-nums {
+        @apply font-mono tabular-nums tracking-tighter;
+    }
+}
