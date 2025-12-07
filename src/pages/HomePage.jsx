@@ -13,7 +13,7 @@ const HomePage = () => {
         id: 1,
         title: "National Championship 2025: Vikram Malhotra Defends Title Against Rising Star Arjun Das",
         summary: "The stage is set for an epic showdown in Pune as the veteran Vikram Malhotra faces the 19-year-old prodigy Arjun Das in the finals.",
-        image: "https://images.unsplash.com/photo-1599586120429-48285b6a8a81?q=80&w=1600&auto=format&fit=crop", // High quality match shot
+        image: "/table_tennis_hero.png",
         category: "Tournament Focus",
         time: "2h ago"
     };
