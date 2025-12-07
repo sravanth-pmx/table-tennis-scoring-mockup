@@ -41,7 +41,7 @@ const LoginPage = () => {
                         className="w-full bg-slate-900 text-white font-bold rounded-lg py-3 text-base justify-center flex items-center gap-2 hover:bg-corporate-blue transition-colors"
                         disabled={loading}
                     >
-                        {loading ? 'Authenticating...' : 'Enter Cockpit'}
+                        {loading ? 'Authenticating...' : 'Login'}
                     </button>
                 </form>
 
